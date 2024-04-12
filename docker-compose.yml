@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+      projetonode:
+        image: bitnami/postgresql
+        ports:
+          - 5432:5432
+        environment:
+          - POSTGRESQL_USERNAME=DOCKER
+          - POSTGRESQL_PASSOWORD=docker
+          - POSTGRESQL_DATABASE=api_node
